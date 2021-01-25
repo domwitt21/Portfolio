@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="rating" content="General">
+    <meta name="expires" content="never">
+    <meta name="language" content="English, EN">
+    <meta name="description" content="Home page for BBA (Blue Bill Agency) Marketing &amp; Web Development.">
+    <meta name="keywords"
+        content="Web Development,CSS,JavaScript, HTML5, session storage, html5 local storage, web design, design, website, custom website, microsoft, office 365">
+    <meta name="author" content="Dominic Witt">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Blue Bill Agency - Official Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="js/contact.js"></script>
+</head>
+
+<header>
+    <!--                       MOBILE NAV MENU                    -->
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" class="active"><img src="images/personalLogo.png" alt="Error Loading Image"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--         ***              MOBILE NAV MENU END            ***        -->
+
+    <!--         ***              MAIN NAV START                 ***        -->
+    <img src="images/personalLogo.png" alt="Error loading image" width="50" class="personallogo">
+    <div class="mainnav">
+        <a href="index.html" type="#Home">Home</a>
+        <a href="contact.html" type="Contact">Contact</a>
+        <a href="portfolio.html" type="Portfolio">Portfolio</a>
+        <button onclick="mySecond()" class="customJava">Mood Button</button>
+    </div>
+
+</header>
+
+<body id="public">
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <div id="container" class="ltr">
+    
+    
+            <form id="form4" name="form4" class="wufoo  page" accept-charset="UTF-8" autocomplete="off"
+                enctype="multipart/form-data" method="post" validate
+                title="Submit form" action="index.html" onclick="myFunction()">
+    
+                <header id="header" class="info">
+                    <h2 class="">Contact Form</h2>
+                    <div class=""></div>
+                </header>
+                <ul>
+                    <li id="foli6" class="notranslate fullName     ">
+                        <label class="desc" id="title6">
+                            Name
+                            <span id="req_6" class="req">*</span>
+                        </label>
+                        <span>
+                            <input id="Field6" name="Field6" type="text" class="field text fn" value="" size="8"
+                                tabindex="0" placeholder="First" required />
+                            <label for="Field6">First</label>
+                        </span>
+                        <span>
+                            <input id="Field7" name="Field7" type="text" class="field text ln" value="" size="14"
+                                tabindex="0" placeholder="Last" required />
+                            <label for="Field7">Last</label>
+                        </span>
+                        <p class="instruct" id="instruct6">
+                            <small>Please type your first and last name in the required fields!</small>
+                        </p>
+                    </li>
+                    <li id="foli5" data-wufoo-field data-field-type="text" class="notranslate company     ">
+                        <label class="desc" id="title5" for="Field5">
+                            Company
+                        </label>
+                        <div>
+                            <input id="Field5" name="Field5" type="text" class="field text medium" value="" maxLength="255"
+                                tabindex="0" onkeyup="" placeholder="Company" />
+                        </div>
+                        <p class="instruct" id="instruct5">
+                            <small>Company you're representing!</small>
+                        </p>
+                    </li>
+                    <li id="foli9" class="notranslate website      ">
+                        <label class="desc" id="title9" for="Field9">
+                            Website
+                        </label>
+                        <div>
+                            <input id="Field9" name="Field9" type="url" class="field text medium" value="" maxlength="255"
+                                tabindex="0" placeholder="Website" />
+                        </div>
+                        <p class="instruct" id="instruct9">
+                            <small>Personal or company website!</small>
+                        </p>
+                    </li>
+                    <li id="foli10" class="phone notranslate phoneNumber     ">
+                        <label class="desc" id="title10">
+                            Phone Number
+                        </label>
+                        <span>
+                            <input id="Field10" name="Field10" type="tel" class="field text" value="" size="3" maxlength="3"
+                                tabindex="0"
+                                onkeyup="autotab(this, document.getElementById('Field10-1'), this); filterNonnumeric(this);"
+                                onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder="XXX" />
+                            <label for="Field10">###</label>
+                        </span>
+                        <span class="symbol">-</span>
+                        <span>
+                            <input id="Field10-1" name="Field10-1" type="tel" class="field text" value="" size="3"
+                                maxlength="3" tabindex="0"
+                                onkeyup="autotab(this, document.getElementById('Field10-2'), document.getElementById('Field10')); filterNonnumeric(this);"
+                                onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder="XXX" />
+                            <label for="Field10-1">###</label>
+                        </span>
+                        <span class="symbol">-</span>
+                        <span>
+                            <input id="Field10-2" name="Field10-2" type="tel" class="field text" value="" size="4"
+                                maxlength="4" tabindex="0"
+                                onkeyup="autotab(this, this, document.getElementById('Field10-1')); filterNonnumeric(this);"
+                                onfocus="this.selectionStart = this.selectionEnd = this.value.length;" placeholder="XXXX" />
+                            <label for="Field10-2">####</label>
+                        </span>
+                        <p class="instruct" id="instruct10">
+                            <small>Please input your phone number!</small>
+                        </p>
+                    </li>
+                    <li id="foli2" class="notranslate email     ">
+                        <label class="desc" id="title2" for="Field2">
+                            Email
+                            <span id="req_2" class="req">*</span>
+                        </label>
+                        <div>
+                            <input id="Field2" name="Field2" type="email" spellcheck="false" class="field text large"
+                                value="" maxlength="255" tabindex="0" placeholder="youremail@emailprovider.com" required />
+                        </div>
+                        <p class="instruct" id="instruct2">
+                            <small>Please input your email! (All info shared on this page is proprietary information and
+                                will never be shared with anyone)</small>
+                        </p>
+                    </li>
+                    <li id="foli11" class="notranslate budget     ">
+                        <label class="desc" id="title11">
+                            Budget
+                        </label>
+                        <span class="symbol">$</span>
+                        <span>
+                            <input id="Field11" name="Field11" type="text" class="field text currency nospin" value="1000"
+                                size="10" tabindex="0" />
+                            <label for="Field11">Dollars</label>
+                        </span>
+                        <span class="symbol radix">.</span>
+                        <span class="cents">
+                            <input id="Field11-1" name="Field11-1" type="text" class="field text nospin" value="" size="2"
+                                maxlength="2" tabindex="0" />
+                            <label for="Field11-1">Cents</label>
+                        </span>
+                        <p class="instruct" id="instruct11">
+                            <small>If you have a budget, please provide here!</small>
+                        </p>
+                    </li>
+                    <li id="foli1" class="notranslate detailedInfo     "><label class="desc" id="title1" for="Field1">
+                            Detailed Information
+                            <span id="req_1" class="req">*</span>
+                        </label>
+    
+                        <div>
+                            <textarea id="Field1" name="Field1" class="field textarea medium" spellcheck="true" rows="10"
+                                cols="50" tabindex="0" onkeyup="" placeholder="Type here.." required></textarea>
+    
+                        </div>
+    
+                        <p class="instruct" id="instruct1">
+                            <small>Please provide your detailed information, this field is required!</small>
+                        </p>
+                    </li>
+                    <li class="buttons ">
+                        <div>
+    
+                            <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit" />
+                        </div>
+                    </li>
+    
+                </ul>
+            </form>
+    
+    
+        </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerContactinfo">
+            <p id="copyright"><sub>2021 Copyright &copy; Blue Bill Agency Marketing &amp; Web Development (BBA).</sub>
+            </p>
+            <img src="images/personalLogo.png" alt="Error loading image" width="90" title="BBA Logo" id="footerLogo">
+            <ul id="contactList">
+                <li><a href="mailto: dominic@bluebillagency.com">Send Email</a></li>
+                <li><a href="https://discord.com" target="_blank">Discord</a></li>
+                <li><a href="tel: 7065780237">Send SMS</a></li>
+            </ul>
+            <ul class="quickLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+            <ul id="socialLinks">
+                <li><a href="https://facebook.com/dominicwitt" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/dominicwitt6" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/domwitt23" target="_blank">Instagram</a></li>
+                <li><a href="https://pinterest.com" target="_blank">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+</html>
